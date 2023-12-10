@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Style for the navigation menu */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-top:black 3px solid;
+      border-bottom:black 3px solid;
+
+    }
+
+    /* Style for the list items in the navigation menu */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 15px;
+    }
+
+    /* Media query to apply styles for smaller screens */
+    @media (max-width: 600px) {
+      nav ul {
+        display: none; /* Hide the list on small screens by default */
+        flex-direction: column; /* Stack list items vertically */
+        position: left;
+        top: 100px;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul.show {
+        display: flex; /* Show the list when the "show" class is applied */
+      }
+
+      nav li {
+        margin: 0;
+        text-align: center;
+      }
+
+      /* Style for the menu toggle button */
+      #menu-toggle {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+
+    /* Media query to hide the menu button on wider screens */
+    @media (min-width: 601px) {
+      #menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+
+  <!-- Menu toggle button for small screens -->
+  <button id="menu-toggle">Menu</button>
+
+  <!-- Navigation links -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <h1>Jordan Zhang</h1>
+
+</nav>
+
+<script>
+  // JavaScript to toggle the visibility of the navigation menu on small screens
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
