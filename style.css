@@ -50,24 +50,15 @@ footer{
 }
 
 
-
-.homeimg{
-    box-shadow:     
-    4px 10px 16px 2px rgba(0, 0, 0, 0.1),
-    0 8px 12px -4px rgba(0, 0, 0, 0.2),
-    8px 10px 12px -4px rgba(0, 0, 0, 0.3);
-
-}
-
 .banner {
     display: flex;
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Distribute items along the main axis */
     padding: 20px; /* Add padding for spacing */
-    background-image: url(images/marylandwide.jpeg) ;
+    background-color: #FFE5E5;
     background-size: 100% auto;
     background-position: center;
-    height: 150px;
+    height: 50px;
 }
 
 .logo {
