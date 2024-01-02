@@ -65,7 +65,7 @@ footer{
     justify-content: space-between; /* Distribute items along the main axis */
     padding: 20px; /* Add padding for spacing */
     background-image: url(images/marylandwide.jpeg) ;
-    background-size: cover; /* Cover the entire background */
+    background-size: 100% auto;
     background-position: center;
     height: 150px;
 }
