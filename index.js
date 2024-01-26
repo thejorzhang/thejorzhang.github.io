@@ -2,7 +2,7 @@
 var i = 0;
 var speed = 100;
 var txt = 'Hey I\'m Jordan';
-var txt2 = 'I\'m a dedicated sophomore at the University of Maryland at College Park, pursuing finance and computer science. I enjoy web design and development and also have a deep interest in data science and analytics.';
+var txt2 = 'I\'m a dedicated sophomore at the University of Maryland at College Park, pursuing finance and computer science. I enjoy web design and development and also have a deep interest in data science and analytics. Feel free to reach me at jorzhang@terpmail.umd.edu or (301)-273-5495.';
 
 function typer(text) {
   if (i < text.length) {
