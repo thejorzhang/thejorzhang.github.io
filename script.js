@@ -32,3 +32,15 @@ function typeWriterOnLoad() {
 
 // Call the typewriter function when the page loads
 typeWriterOnLoad();
+
+
+function toggleIframe() {
+  var iframe = document.getElementById("myIframe");
+
+  // Toggle the display property
+  if (iframe.style.display === "none") {
+    iframe.style.display = "block";
+  } else {
+    iframe.style.display = "none";
+  }
+}
