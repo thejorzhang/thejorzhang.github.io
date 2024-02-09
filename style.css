@@ -31,9 +31,6 @@ body {
 
 }
 
-li:hover:not(.contact) {
-
-    transform: scale(1.2);  }
 
 
 
@@ -126,3 +123,6 @@ footer{
 
 
 
+  .navbar-nav .nav-item:hover > .nav-link {
+    transition: none;
+  }
