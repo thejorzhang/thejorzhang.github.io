@@ -34,8 +34,8 @@ function typeWriterOnLoad() {
 typeWriterOnLoad();
 
 
-function toggleIframe() {
-  var iframe = document.getElementById("myIframe");
+function toggleIframe(id) {
+  var iframe = document.getElementById(id);
 
   // Toggle the display property
   if (iframe.style.display === "none") {
@@ -44,3 +44,5 @@ function toggleIframe() {
     iframe.style.display = "none";
   }
 }
+
+
