@@ -1,3 +1,39 @@
+/* Crop the first screenshot to remove white space above */
+.project-screenshot-row img.project-screenshot:nth-child(1) {
+  width: 420px;
+  height: 260px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 16px;
+}
+/* Flex row for project screenshots */
+.project-screenshot-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+/* Style for project screenshots */
+.project-screenshot {
+  margin: 16px 8px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  transition: box-shadow 0.2s;
+}
+.project-screenshot:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+/* Center iframes and images in project sections */
+.text-center iframe,
+.text-center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 img{
     width: 500px;
 }

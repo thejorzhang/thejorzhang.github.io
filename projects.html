@@ -24,10 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarsExample04">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="oldindex.html">Raw HTML</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="projects.html">Projects</a>
@@ -45,16 +42,23 @@
     </div>
   </nav>
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7261787669389594624?collapsed=1" height="264" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
       <div class="d-flex flex-column align-items-center justify-content-center pt-5 mb-5">
     <div class="text-center mb-3">
-      <button id="toggleButton" class="btn btn-primary" onclick="toggleIframe('Temple1'); toggleIframe('Temple2')">Second Place & Finalist: 2024 Vanguard ETF Trading Challenge</button>
+      <button id="toggleButton" class="btn btn-primary" onclick="toggleIframe('Temple1'); toggleElement('Temple2')">Second Place & Finalist: 2024 Vanguard ETF Trading Challenge</button>
     </div>
-    <div>
+    <div class="text-center w-100">
       <iframe id="Temple1" style="display: none; max-width: 100%; max-height: 100%;" src="https://docs.google.com/presentation/d/e/2PACX-1vTlxSpKse7rr4TlzeLZ9ZAzn41Pbncws_5Ba9guOa1Xgmwc8BH7tDBcLxjp1ugMIJOShqOkOrUQQaB-/pubembed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>      
-      
-      <iframe  class = "pt-5" id="Temple2" style="display: none; max-width: 100%; max-height: 100%;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7261787669389594624?collapsed=1" height="264" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+     
+      <div style="display: none; max-width: 100%; max-height: 100%;" id="Temple2" class="text-center">
+        <div class="project-screenshot-row">
+          <img class="project-screenshot" src="images/1729543580732.jpeg">
+          <img class="project-screenshot" src="images/linkedinscreenshot.png">
+          <img class="project-screenshot" src="images/linkedinscreenshot2.png">
+          
+        </div>
+      </div>
+      </div>
     </div>
   </div>
 
