@@ -24,7 +24,7 @@
     gtag('config', 'G-QG4GR9R1RW');
   </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=20260417b">
+  <link rel="stylesheet" href="./style.css?v=20260417c">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
@@ -64,36 +64,56 @@
       </ul>
     </div>
   </nav>
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="page-kicker">Selected Work</p>
+      <h1 class="page-title">Projects</h1>
+      <p class="page-summary">
+        A selection of finance and strategy work centered on ETF analysis, capital markets, modeling, and presentation under competitive pressure.
+      </p>
+    </section>
 
-
-      <div class="d-flex flex-column align-items-center justify-content-center pt-5 mb-5">
-    <div class="text-center mb-3">
-      <button id="toggleButton" class="btn btn-primary" onclick="toggleIframe('Temple1'); toggleElement('Temple2')">Second Place & Finalist: 2024 Vanguard ETF Trading Challenge</button>
-    </div>
-    <div class="text-center w-100">
-      <iframe id="Temple1" style="display: none; max-width: 100%; max-height: 100%;" src="https://docs.google.com/presentation/d/e/2PACX-1vTlxSpKse7rr4TlzeLZ9ZAzn41Pbncws_5Ba9guOa1Xgmwc8BH7tDBcLxjp1ugMIJOShqOkOrUQQaB-/pubembed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>      
-     
-      <div style="display: none; max-width: 100%; max-height: 100%;" id="Temple2" class="text-center">
+    <section class="project-card">
+      <div class="project-card-header">
+        <div>
+          <p class="page-card-eyebrow">Case Competition</p>
+          <h2 class="page-card-title">2024 Vanguard ETF Trading Challenge</h2>
+          <p class="project-card-subtitle">Second Place and Finalist</p>
+        </div>
+        <button class="btn btn-dark" onclick="toggleIframe('Temple1'); toggleElement('Temple2')">Toggle Presentation</button>
+      </div>
+      <p class="project-card-description">
+        ETF strategy recommendations built from quantitative signals, macro context, portfolio optimization, and clear judge-facing presentation.
+      </p>
+      <div class="project-embed-wrap">
+        <iframe id="Temple1" class="project-embed" style="display: none;" src="https://docs.google.com/presentation/d/e/2PACX-1vTlxSpKse7rr4TlzeLZ9ZAzn41Pbncws_5Ba9guOa1Xgmwc8BH7tDBcLxjp1ugMIJOShqOkOrUQQaB-/pubembed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+      <div id="Temple2" class="text-center" style="display: none;">
         <div class="project-screenshot-row">
-          <img class="project-screenshot" src="images/1729543580732.jpeg">
-          <img class="project-screenshot" src="images/linkedinscreenshot.png">
-          <img class="project-screenshot" src="images/linkedinscreenshot2.png">
-          
+          <img class="project-screenshot" src="images/1729543580732.jpeg" alt="Vanguard ETF Challenge award photo">
+          <img class="project-screenshot" src="images/linkedinscreenshot.png" alt="LinkedIn post screenshot">
+          <img class="project-screenshot" src="images/linkedinscreenshot2.png" alt="LinkedIn post screenshot">
         </div>
       </div>
+    </section>
+
+    <section class="project-card">
+      <div class="project-card-header">
+        <div>
+          <p class="page-card-eyebrow">Case Competition</p>
+          <h2 class="page-card-title">2022 Indiana University Financial Services Capital Markets Case Competition</h2>
+          <p class="project-card-subtitle">Runner-Up</p>
+        </div>
+        <button class="btn btn-dark" onclick="toggleIframe('IUFSC')">Toggle Presentation</button>
       </div>
-    </div>
-  </div>
-
-
-  <div class="d-flex flex-column align-items-center justify-content-center pt-5 mb-5">
-    <div class="text-center mb-3">
-      <button id="toggleButton" class="btn btn-primary" onclick="toggleIframe('IUFSC')">Runner-Up: 2022 Indiana University Financial Services Fall Capital Markets Case Competition</button>
-    </div>
-    <div>
-      <iframe id="IUFSC" style="display: none; max-width: 100%; max-height: 100%;" src="https://docs.google.com/presentation/d/e/2PACX-1vTSegu5ime_oj0UVzlxefgSnd7OXKoMmwV_Z_wHEuDjqSp8a8xN3dwCHcxe3-6hUA/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    </div>
-  </div>
+      <p class="project-card-description">
+        Capital markets case work focused on financial analysis, recommendation building, and presentation clarity for industry evaluators.
+      </p>
+      <div class="project-embed-wrap">
+        <iframe id="IUFSC" class="project-embed" style="display: none;" src="https://docs.google.com/presentation/d/e/2PACX-1vTSegu5ime_oj0UVzlxefgSnd7OXKoMmwV_Z_wHEuDjqSp8a8xN3dwCHcxe3-6hUA/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+    </section>
+  </main>
 
 
   
